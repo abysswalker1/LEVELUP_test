@@ -1,7 +1,0 @@
-@mixin hover {
-  &:hover,
-  &.active,
-  &.current-menu-item {
-    @content;
-  }
-}

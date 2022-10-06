@@ -15,7 +15,7 @@ const config = require('../config');
 
 gulp.task('css', () =>
   gulp
-    .src(path.join(config.root.dev, config.css.dev, 'index.scss'))
+    .src(path.join(config.root.dev, config.css.dev, 'index.sass'))
     .pipe(gulpif(!config.production, sourcemaps.init()))
     .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
     .pipe(sass({
