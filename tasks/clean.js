@@ -6,7 +6,7 @@ const config = require('../config');
 const Log = require('./lib/logger');
 
 gulp.task('clean', () => {
-  const tasksFoldersToDelete = ['js', 'css', 'images', 'sprite', 'fonts'].map(task => {
+  const tasksFoldersToDelete = ['js', 'css', 'images', 'media', 'sprite', 'fonts'].map(task => {
     if (!config[ task ] || !config[ task ].dist) {
       return new Log(
         'clear',

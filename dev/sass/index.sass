@@ -1,61 +1,12 @@
-// global
-body
-  margin: 0
-  box-sizing: border-box
+@import './other/reset'
+@import './other/fonts'
+@import './other/variables'
+@import './other/mixins'
 
+@import './templates/header'
+@import './templates/promo'
+@import './templates/description'
 
-// variables
-$main-purple: #9944AD
-$shadow: #96889A
-$main-yellow: #F0B819
-
-// mixins
-
-@mixin std-flexbox($justify: space-between, $direction: row)
-  display: flex
-  flex-direction: $direction
-  align-items: center
-  justify-content: $justify
-
-@mixin std-container($width: 1300px)
-  max-width: $width
-  padding-right: 15px
-  padding-left: 15px
-  margin: 0 auto
-
-
-//header
-.header
-  background-color: $main-purple
-  color: white
-  box-shadow: 0 2px 2px $shadow
-  &__container
-    padding: 20px 0
-    @include std-container()
-    @include std-flexbox()
-
-
-//promo
-
-.promo
-  background: rgb(63,94,251)
-  background: radial-gradient(circle, rgba(63,94,251,0.3785889355742297) 21%, rgba(219,70,252,1) 47%)
-  height: calc(100vh - 58px)
-  &__container
-    @include std-container()
-    @include std-flexbox(center)
-    column-gap: 20px
-    height: 100%
-    div
-      flex: 1
-  &__image-wrap
-    @include std-flexbox(center)
-  &__image
-    width: 70%
-  &__features
-    &-list
-      font-size: 3rem
-      color: $main-yellow
 
 
 

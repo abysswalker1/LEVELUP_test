@@ -1,0 +1,23 @@
+.header
+  background-color: $main-purple
+  color: white
+  box-shadow: 0 2px 2px $shadow
+  @include content()
+  &__container
+    padding: 20px 0
+    @include std-container()
+    @include std-flexbox()
+  &__logo
+    font-family: 'Inter Tight'
+    font-size: 35px
+  &__phone
+    @include light()
+    font-size: 20px
+
+
+@media screen and (max-width: 510px)
+  .header
+    &__container
+      justify-content: center
+    &__phone
+      display: none

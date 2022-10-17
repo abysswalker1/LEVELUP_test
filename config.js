@@ -32,6 +32,11 @@ module.exports = {
     dist: env.IMAGES_DIST,
     extensions: env.IMAGES_EXTENTIONS,
   },
+  media: {
+    dev: env.MEDIA_DEV,
+    dist: env.MEDIA_DIST,
+    extensions: env.MEDIA_EXTENTIONS,
+  },
   sprite: {
     dev: env.SVG_SPRITE_DEV,
     dist: env.SVG_SPRITE_DIST,

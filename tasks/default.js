@@ -3,7 +3,7 @@ const runSequence = require('run-sequence');
 
 const config = require('../config');
 
-const assets = ['images', 'fonts', 'static', 'sprite'];
+const assets = ['images', 'fonts', 'static', 'media', 'sprite'];
 
 if (config.html.run) {
   assets.push('html');

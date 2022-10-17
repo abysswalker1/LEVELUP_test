@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.9.6",
+    "@babel/parser": "^7.19.4",
     "@babel/preset-env": "7.9.6",
     "babel-core": "6.26.3",
     "babel-loader": "8.1.0",
@@ -67,5 +68,10 @@
     "webpack": "4.43.0",
     "webpack-dev-middleware": "3.7.2",
     "webpack-hot-middleware": "2.25.0"
+  },
+  "dependencies": {
+    "@babel/helper-string-parser": "^7.19.4",
+    "gulp-video64": "^1.0.0",
+    "jquery": "^3.6.1"
   }
 }

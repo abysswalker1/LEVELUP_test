@@ -7,7 +7,7 @@ const config = require('../config');
 const Log = require('./lib/logger');
 
 gulp.task('watch', ['liveReload'], () => {
-  const tasksToWatch = ['css', 'images', 'sprite', 'static', 'fonts', 'js'];
+  const tasksToWatch = ['css', 'images', 'media', 'sprite', 'static', 'fonts', 'js'];
 
   if (config.html.run) {
     tasksToWatch.push('html');
